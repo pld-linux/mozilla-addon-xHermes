@@ -9,8 +9,8 @@ Version:	%{bver}%{pver}
 Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.mozdev.org/hermes/xHermes%{fver}.xpi
-# Source0-md5:	3e422b3b0ab475e23437c17f8ba705db
+Source0:	http://downloads.us-east1.mozdev.org/hermes/xHermes%{fver}.xpi
+# Source0-md5:	d6c33a108803ac9d6d287de8cec0f728
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://hermes.mozdev.org/
 BuildRequires:	unzip
