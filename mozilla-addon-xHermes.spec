@@ -48,6 +48,7 @@ cd %{_chromedir}
 cat *-installed-chrome.txt >installed-chrome.txt
 
 %postun
+cd %{_chromedir}
 cat *-installed-chrome.txt >installed-chrome.txt
 
 %files
