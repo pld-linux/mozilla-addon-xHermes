@@ -6,14 +6,14 @@ Name:		mozilla-addon-xHermes
 %define	pver	pre1
 Version:	%{bver}%{pver}
 %define	fver	%(echo %{bver} | tr -d .)-%{pver}
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://downloads.mozdev.org/hermes/xHermes%{fver}.xpi
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://hermes.mozdev.org/
 BuildRequires:	unzip
-Requires:	mozilla >= 1.0
+Requires:	mozilla >= 1.0-7
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -45,13 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 cd %{_chromedir}
-cat %{_realname}-installed-chrome.txt >> installed-chrome.txt
+cat *-installed-chrome.txt >installed-chrome.txt
 
 %postun
-cd %{_chromedir}
-cat installed-chrome.txt | grep -v "%{_realname}" > installed-chrome.txt.tmp
-cat installed-chrome.txt.tmp > installed-chrome.txt
-rm -f installed-chrome.txt.tmp
+cat *-installed-chrome.txt >installed-chrome.txt
 
 %files
 %defattr(644,root,root,755)
