@@ -1,3 +1,3 @@
-content,install,url,resource:/chrome/xhermes/content/
-locale,install,url,resource:/chrome/xhermes/locale/pl-PL/
-locale,install,url,resource:/chrome/xhermes/locale/en-US/
+content,install,url,jar:resource:/chrome/xhermes.jar!/content/
+locale,install,url,jar:resource:/chrome/xhermes.jar!/locale/pl-PL/
+locale,install,url,jar:resource:/chrome/xhermes.jar!/locale/en-US/
