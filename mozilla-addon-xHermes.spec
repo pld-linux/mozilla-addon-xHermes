@@ -6,7 +6,7 @@ Name:		mozilla-addon-xHermes
 %define	pver	pre1
 Version:	%{bver}%{pver}
 %define	fver	%(echo %{bver} | tr -d .)-%{pver}
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://downloads.us-east1.mozdev.org/hermes/xHermes%{fver}.xpi
@@ -20,7 +20,7 @@ Requires:	mozilla >= 1.0-7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
-%define		_chromedir	%{_libdir}/mozilla/chrome
+%define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
 Web2mail support interface. It supports mail, internet banking,
