@@ -1,5 +1,5 @@
 Summary:	Web2mail support interface
-Summary(pl):	Narzêdzie do obs³ugi poczty przez WWW
+Summary(pl.UTF-8):   NarzÄ™dzie do obsÅ‚ugi poczty przez WWW
 Name:		mozilla-addon-xHermes
 %define		_realname	xhermes
 %define	bver	0.3
@@ -28,10 +28,10 @@ Web2mail support interface. It supports mail, internet banking,
 sending SMSs, auction serveces accessible through WWW. It can
 integrate with sidebar or work in separate window.
 
-%description -l pl
-Narzêdzie do obs³ugi poczty, kont bankowych, wysy³ania sms-ów oraz
-serwisów aukcyjnych przez WWW. Dzia³a jako aplikacja w osobnym
-okienku, lub integruje siê z sidebarem.
+%description -l pl.UTF-8
+NarzÄ™dzie do obsÅ‚ugi poczty, kont bankowych, wysyÅ‚ania sms-Ã³w oraz
+serwisÃ³w aukcyjnych przez WWW. DziaÅ‚a jako aplikacja w osobnym
+okienku, lub integruje siÄ™ z sidebarem.
 
 %prep
 %setup -q -c
