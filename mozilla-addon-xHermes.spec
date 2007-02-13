@@ -1,5 +1,5 @@
 Summary:	Web2mail support interface
-Summary(pl.UTF-8):   Narzędzie do obsługi poczty przez WWW
+Summary(pl.UTF-8):	Narzędzie do obsługi poczty przez WWW
 Name:		mozilla-addon-xHermes
 %define		_realname	xhermes
 %define	bver	0.3
